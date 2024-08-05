@@ -7,7 +7,7 @@ let myInvoice = new MicroInvoice({
   style : {
     header : {
       image : {
-        path : "./examples/logo.png",
+        path : "./logo.png",
         width : 50,
         height : 19
       }

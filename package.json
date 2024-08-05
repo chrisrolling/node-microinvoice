@@ -1,42 +1,42 @@
 {
-  "name": "microinvoice",
-  "version": "1.0.6",
+  "name": "microinvoice2",
+  "version": "2.0.0",
   "description": "Fast & elegant PDF invoice generator for Node using PDFKit. No Puppeteer",
-  "homepage": "https://github.com/baptistejamin/node-microinvoice",
+  "homepage": "https://github.com/chrisrolling/node-microinvoice",
   "main": "lib/index.js",
   "directories": {
-    "lib": "lib"
+    "example": "examples"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/baptistejamin/node-microinvoice.git"
+    "url": "git://github.com/chrisrolling/node-microinvoice.git"
   },
   "bugs": {
-    "url": "https://github.com/baptistejamin/node-microinvoice/issues"
+    "url": "https:/github.com/chrisrolling/node-microinvoice/issues"
   },
   "engines": {
     "node": ">= 6.4.0"
   },
   "scripts": {
-    "test": "check-build"
+    "lint": "eslint 'lib/**/*.js' 'example/**/*.js'",
+    "lint-fix": "eslint 'lib/**/*.js' 'example/**/*.js' --fix"
   },
-  "author": {
-    "name": "Baptiste Jamin",
-    "email": "baptiste@crisp.chat",
-    "url": "https://crisp.chat/"
-  },
+  "author": "Chris Rolling/cr@forment.co / original: Baptiste Jamin <baptiste@crisp.chat> (https://crisp.chat/)",
   "keywords": [
     "invoice",
     "pdf",
     "pdfkit"
   ],
   "dependencies": {
-    "lodash.merge": "4.6.2",
-    "pdfkit": "0.12.3",
-    "transliteration": "2.2.0"
+    "lodash": "4.17.21",
+    "pdfkit": "^0.15.0",
+    "unidecode": "^1.1.0"
   },
   "devDependencies": {
-    "check-build": "2.8.2"
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
   }
 }
