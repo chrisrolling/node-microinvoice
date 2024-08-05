@@ -4,6 +4,7 @@
   "description": "Fast & elegant PDF invoice generator for Node using PDFKit. No Puppeteer",
   "homepage": "https://github.com/chrisrolling/node-microinvoice",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "example": "examples"
   },
